@@ -24,6 +24,8 @@ print
 # TODO - write not_string
 
 
+print
+
 def icy_hot(x, y):
 	hot = False
 	cold = False
@@ -43,7 +45,25 @@ print icy_hot(50, 50) # expect False
 print icy_hot(110, -10) # expect True
 print icy_hot(-10, 110) # expect True
 
-# TODO - write closer_to
+print
+
+def closer_to(target, guess1, guess2):
+	difference1 = abs(target - guess1)
+	difference2 = abs(target - guess2)
+
+	if difference1 < difference2:
+		return guess1
+
+	if difference1 > difference2:
+		return guess2
+
+	if difference1 == difference2:
+		return 0
+
+print closer_to(10, 5, 6) # expect 6
+print closer_to(10, 7, 5) # expect 7
+print closer_to(10, 5, 5) # expect 0
+print closer_to(10, 12, 11) # expect 11
 
 # TODO - write two_as_one
 
