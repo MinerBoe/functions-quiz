@@ -65,6 +65,23 @@ print closer_to(10, 7, 5) # expect 7
 print closer_to(10, 5, 5) # expect 0
 print closer_to(10, 12, 11) # expect 11
 
+print
 # TODO - write two_as_one
+def two_as_one(int1, int2, int3):
+	if int1 + int2 == int3:
+		return True
+
+	if int1 + int3 == int2:
+		return True
+
+	if int2 + int3 == int1:
+		return True
+
+	return False
+
+print two_as_one(1, 1, 2)  # expect True
+print two_as_one(1, 2, 1)  # expect True
+print two_as_one(2, 1, 1)  # expect True
+print two_as_one(1, 1, 10) # expect False
 
 # TODO - write pig_latinify
