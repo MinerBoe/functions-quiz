@@ -21,8 +21,16 @@ print has_teen(14, 14, 14) # expect True
 print has_teen(18, 16, 14) # expect True
 
 print
-# TODO - write not_string
 
+def not_string(str):
+	lower_str = str.lower()
+	if lower_str.startswith("not"):
+		return str + " " + "not"
+
+	return "Not" + " " + str
+
+print not_string("Not Apples")
+print not_string("Oranges")
 
 print
 
@@ -66,7 +74,7 @@ print closer_to(10, 5, 5) # expect 0
 print closer_to(10, 12, 11) # expect 11
 
 print
-# TODO - write two_as_one
+
 def two_as_one(int1, int2, int3):
 	if int1 + int2 == int3:
 		return True
@@ -83,5 +91,7 @@ print two_as_one(1, 1, 2)  # expect True
 print two_as_one(1, 2, 1)  # expect True
 print two_as_one(2, 1, 1)  # expect True
 print two_as_one(1, 1, 10) # expect False
+
+print
 
 # TODO - write pig_latinify
