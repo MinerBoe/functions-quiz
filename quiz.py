@@ -27,7 +27,7 @@ def not_string(str):
 	if lower_str.startswith("not"):
 		return str + "not"
 
-	return "Not" + str
+	return "not" + str
 
 print not_string("Not Apples")
 print not_string("Oranges")
@@ -95,30 +95,30 @@ print two_as_one(1, 1, 10) # expect False
 print
 
 # TODO - write pig_latinify
-def pig_latinify(word):
-	whitespace = word
-	lower_word = word.lower()
-	starts_vowel = False
-	if lower_word.startswith("a"):
-		starts_vowel = True
+#def pig_latinify(word):
+#	whitespace = word
+#	lower_word = word.lower()
+#	starts_vowel = False
+#	if lower_word.startswith("a"):
+##		starts_vowel = True
 
-	if lower_word.startswith("e"):
-		starts_vowel = True
+#	if lower_word.startswith("e"):
+#		starts_vowel = True
 
-	if lower_word.startswith("i"):
-		starts_vowel = True
+#	if lower_word.startswith("i"):
+#		starts_vowel = True
 
-	if lower_word.startswith("o"):
-		starts_vowel = True
+#	if lower_word.startswith("o"):
+#		starts_vowel = True
 
-	if lower_word.startswith("u"):
-		starts_vowel = True
+#	if lower_word.startswith("u"):
+#		starts_vowel = True
 
-	if starts_vowel:
-		return word + "way"
+#	if starts_vowel:
+#		return word + "way"
 
 
 
-print pig_latinify("Apple")
-print pig_latinify(" Apple ")
-print pig_latinify(" apple")
+#print pig_latinify("Apple")
+#print pig_latinify(" Apple ")
+#print pig_latinify(" apple")
